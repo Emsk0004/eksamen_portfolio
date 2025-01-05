@@ -1,3 +1,30 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main_body {
+  max-width: 1200px; /** Størrelse på skærm **/
+  margin-inline: auto; /** Centrerer **/
+  padding-left: 1rem; /** Venstre luft **/
+  padding-right: 1rem; /** Højre luft **/
+}
+
+/* FONTS */
+
+.anton-regular {
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-regular {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* MENU */
 
 * {
@@ -7,10 +34,9 @@
 }
 
 header {
-  position: sticky;
+  position: sticky; /* Gør at den sidder fast */
   top: 0;
   display: flex;
-  align-items: center;
   padding: 20px;
   z-index: 1000; /* Gør z-index højere end hero-billedet */
 }
@@ -33,35 +59,27 @@ nav {
   color: #79021c;
 }
 
-.menu li:last-child {
-  margin-right: 0;
-}
-
 .menu a {
   display: block;
   padding: 10px;
-  color: #79021c;
-  text-decoration: none;
-  transition: color 0.3s;
+  color: #79021c; /* Farve på teksten */
+  text-decoration: none; /* Ingen "linjer" under */
+  transition: color 0.3s; /* tid på skiftet af farve*/
 }
 
 .menu a:hover {
-  color: #b6042a;
-  text-decoration: underline;
-  text-decoration-color: #042ab6;
+  color: #b6042a; /* Hover-farven*/
+  text-decoration: underline; /* Laver en underlinje når man hover*/
+  text-decoration-color: #042ab6; /* Underlinjens farve*/
 }
 
 .burger {
-  width: 20px;
   height: 20px;
-  cursor: pointer;
+  cursor: pointer; /* Musen ændres */
 }
 
 .menu {
-  display: none;
-}
-.burger {
-  display: block;
+  display: none; /* Gør at menuen skjules inden der klikkes på menu */
 }
 
 nav.active .menu {
@@ -70,9 +88,9 @@ nav.active .menu {
   top: 94px;
   left: 0;
   width: 40%;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  background-color: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* */
+  z-index: 1; /* Gør at z-index er højere end hero-billedet*/
+  background-color: #ffffff; /* Baggrundsfraven på kassen*/
 }
 
 nav.active .menu li {
@@ -80,20 +98,20 @@ nav.active .menu li {
 }
 
 nav.active .menu a {
-  font-size: 20px;
+  font-size: 20px; /* Font-størrelsen på "menu-knappen */
 }
 
 /* FOOTER */
 
 footer {
-  background-color: #79021c;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: #79021c; /* */
+  padding-top: 20px; /* Gør footeren større*/
+  padding-bottom: 20px; /* Gør footeren større*/
 }
 
 .footer_tekst {
-  color: #ffffff;
-  text-align: center;
+  color: #ffffff; /* Tekst-farven */
+  text-align: center; /* Centrere teksten */
 }
 
 /* COPY */
@@ -124,13 +142,36 @@ p {
 
 .main_copy_h1 {
   text-align: center;
-  margin-top: 30px;
-  font-size: 2.5rem;
+  margin-top: 30px; /* Giver rum over teksten */
+  font-size: 2.5rem; /* Font-størrelsen*/
 }
 
 .main_copy_h2 {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 1.9rem;
+  margin-top: 20px; /* Giver rum over teksten */
+  margin-bottom: 20px; /* Giver rum under teksten*/
+  font-size: 1.9rem; /* Font-størrelsen */
+}
+
+/* KNAP */
+
+.knap {
+  background-color: #79021c; /* Baggrundsfarve på knappen*/
+  color: white; /* tekst farve*/
+  padding: 15px 15px;
+  text-align: center; /* Centrere teksten */
+  text-decoration: none; /* Ingen linjer under teksten */
+  font-family: "Spectral", serif;
+  display: inline-block;
+  font-size: 15px; /* Font-størrelsen */
+  width: 40%;
+  transition-duration: 0.4s; /* Tiden på skift af farve */
+  cursor: pointer; /* Ændre musen */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Skygge på knappen*/
+  margin-top: 30px; /* Giver rum over knappen*/
+  margin-bottom: 30px; /* Giver rum under knappen */
+}
+
+.knap:hover {
+  background-color: #b6042a; /* Knappens hover-effekt*/
 }

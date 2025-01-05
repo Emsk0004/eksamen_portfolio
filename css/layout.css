@@ -1,0 +1,143 @@
+/* HERO-SECTION */
+
+.hero {
+  position: relative;
+}
+
+/* Tekst ovenpå billedet */
+.hero-text {
+  position: absolute;
+  top: 50%; /* Giver placereingen af teksten */
+  left: 35%; /* Giver placeringen af teksten */
+  transform: translate(-50%, -50%);
+}
+/* Styling af teksten */
+.hero_tekst_h1 {
+  font-size: 1.3rem; /* Font-størrelse*/
+}
+
+.hero_tekst_h2 {
+  font-size: 1rem; /* Font.størrelse */
+}
+
+/* HERO-LINJER */
+
+.vandret_line {
+  height: 1px; /* Linjens tykkelse*/
+  background-color: #042ab6; /* Linjens farve */
+  width: 85%; /* Længden på linjen*/
+}
+
+/* HOPPENDE PIL */
+
+.hoppende_pil {
+  position: relative;
+}
+
+@keyframes pil {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.pil {
+  animation: pil 1.5s infinite ease-in-out; /* Pilens bevægelse */
+  bottom: 0;
+  display: block;
+  left: 50%; /* Pilens placering på siden */
+  position: absolute;
+  width: 10%; /* Størrelsen på pilen */
+  margin-left: -5%;
+}
+
+/* Hero - Desktop */
+
+@media (min-width: 700px) {
+  .hero-text {
+    position: absolute;
+    top: 35%; /* Tekstens placering på siden */
+    left: 35%; /* Tekstens placering på siden */
+    transform: translate(-50%, -50%);
+  }
+
+  /* Styling af teksten */
+  .hero_tekst_h1 {
+    font-size: 2.5rem; /* Font-størrelse */
+  }
+
+  .hero_tekst_h2 {
+    font-size: 2.2rem;
+  }
+
+  /* HERO-LINJER */
+
+  .vandret_line {
+    height: 1px; /* Linjens tykkelse */
+    background-color: #042ab6; /* Linjens farve */
+    width: 75%; /* Linjens længde*/
+  }
+}
+
+/* AGENDA - FORSIDE */
+
+@media (min-width: 950px) {
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+
+  .grid_1_1_højre {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .forside_tekst {
+    margin-inline: 20px; /* Gør at teksten står pænt ved siden af billedet */
+  }
+
+  .order {
+    order: +1; /* Gør at billede og tekst står rigtigt i mobil */
+  }
+}
+
+.om_billede {
+  width: 75%; /* Billedets størrelse */
+}
+
+@media (max-width: 650px) {
+  .grid_1_1_højre {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .grid_1_1 {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* LINJER MELLEM BILLEDER OSV */
+
+.mellem_line {
+  height: 1px; /* Linjens højde */
+  background-color: #042ab6; /* Linjens farve */
+  width: 100%; /* Linjens længde */
+  margin-top: 45px; /* Giver rum over linjen*/
+  margin-bottom: 45px; /* Giver rum under linjen */
+}
