@@ -1,0 +1,136 @@
+/* MENU */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000; /* Gør z-index højere end hero-billedet */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #79021c;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #79021c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #b6042a;
+  text-decoration: underline;
+  text-decoration-color: #042ab6;
+}
+
+.burger {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+.burger {
+  display: block;
+}
+
+nav.active .menu {
+  display: block;
+  position: absolute;
+  top: 94px;
+  left: 0;
+  width: 40%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+nav.active .menu li {
+  margin: 10px 20px;
+}
+
+nav.active .menu a {
+  font-size: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #79021c;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer_tekst {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* COPY */
+
+h1 {
+  font-family: "Anton", serif;
+  color: #79021c;
+}
+
+h2 {
+  font-family: "Anton", serif;
+  color: #b6042a;
+}
+
+h3 {
+  font-family: "Spectral", serif;
+  font-size: 17px;
+}
+
+p {
+  font-family: "Spectral", serif;
+  font-size: 17px;
+}
+
+.link {
+  font-family: "Spectral", serif;
+}
+
+.main_copy_h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2.5rem;
+}
+
+.main_copy_h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+}
