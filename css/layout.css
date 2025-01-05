@@ -154,13 +154,13 @@
   }
 
   .grid_2_1_p {
-    margin-left: 25%;
-    margin-top: 20%;
+    margin-left: 25%; /* Giver plads ved siden af billedet */
+    margin-top: 20%; /* Giver rum over teksten*/
   }
 
   .grid_2_1_lp {
-    margin-right: 10%;
-    margin-top: 30px;
+    margin-right: 10%; /* Giver plads til linket + linjerne kortere */
+    margin-top: 30px; /* Giver rum over teksten*/
   }
 
   .grid_1_2 {
@@ -170,18 +170,18 @@
   }
 
   .grid_1_2_p {
-    margin-right: 15%;
-    margin-top: 25%;
+    margin-right: 15%; /* Giver plads ved siden af billedet */
+    margin-top: 25%; /* Giver rum over teksten */
   }
 
   .link {
-    margin-left: 30%;
+    margin-left: 30%; /* */
     margin-top: 15%;
   }
 }
 
 .link_midt {
-  text-align: center;
+  text-align: center; /* Centrere link + tekst i midten af dens grid */
   padding: 10px;
 }
 
@@ -195,32 +195,33 @@ LOTTIEFILE */
 }
 
 .lodret_line {
-  height: 50%;
-  background-color: #042ab6;
-  width: 1px;
+  height: 50%; /* Giver linjen længde lodret */
+  background-color: #042ab6; /* Linjens farve */
+  width: 1px; /* Bestemmer tykkelsen */
   margin-top: 100%;
 }
 
 .lodret_line2 {
-  height: 50%;
-  background-color: #042ab6;
-  width: 1px;
+  height: 50%; /* Giver linjen længde lodret */
+  background-color: #042ab6; /* linjens farve */
+  width: 1px; /* Betsmmer tykkelsen */
   margin-top: 100%;
-  margin-left: 100%;
+  margin-left: 100%; /* Giver plads ved siden af lottiefilen */
 }
 
+/* Desktop */
 @media (min-width: 700px) {
   .lottie_animation {
-    height: 300px;
-    width: 1000px;
+    height: 300px; /* Bestemmer størrelsen for desktop */
+    width: 1000px; /* Bestemmer størrelsen for desktop */
   }
 }
 
 /* Mobil */
 @media (max-width: 699px) {
   .lottie_animation {
-    height: 55px;
-    width: 377px;
+    height: 55px; /* Bestemmer størrelsen for mobil */
+    width: 377px; /* Bestemmer størrelsen for mobil */
   }
 }
 
@@ -228,7 +229,7 @@ LOTTIEFILE */
 
 @media (min-width: 700px) {
   .om_p {
-    margin-left: 22.5%;
-    margin-right: 22.5%;
+    margin-left: 22.5%; /* Gør linjerne kortere */
+    margin-right: 22.5%; /* Gør linjerne kortere */
   }
 }
