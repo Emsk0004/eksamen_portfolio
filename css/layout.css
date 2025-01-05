@@ -141,3 +141,46 @@
   margin-top: 45px; /* Giver rum over linjen*/
   margin-bottom: 45px; /* Giver rum under linjen */
 }
+
+/* TEMA */
+
+@media (min-width: 700px) {
+  .grid_2_1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .grid_2_1_p {
+    margin-left: 25%;
+    margin-top: 20%;
+  }
+
+  .grid_2_1_lp {
+    margin-right: 10%;
+    margin-top: 30px;
+  }
+
+  .grid_1_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+
+  .grid_1_2_p {
+    margin-right: 15%;
+    margin-top: 25%;
+  }
+
+  .link {
+    margin-left: 30%;
+    margin-top: 15%;
+  }
+}
+
+.link_midt {
+  text-align: center;
+  padding: 10px;
+}
